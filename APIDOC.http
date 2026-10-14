@@ -1,0 +1,41 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "title": "Python Program for finding factorial of a number",
+    "language": "python",
+    "difficulty_level": "easy",
+    "notes": "Introduction to Python programming based on loops",
+    "topic": "loops",
+    "sample_input": "5",
+    "sample_output": "125",
+    "is_active": true
+}
+
+
+###
+GET  http://127.0.0.1:8000/questions/2/
+Accept:  application/json
+
+
+###
+PUT   http://127.0.0.1:8000/questions/1/
+Content-Type:   application/json
+
+
+{
+    "title": "Python Program for Finding the Square of a Number",
+    "language": "python",
+    "difficulty_level": "easy",
+    "notes": "Introduction to Python programming using arithmetic operators",
+    "topic": "operators",
+    "sample_input": "5",
+    "sample_output": "25",
+    "is_active": true
+}
+
